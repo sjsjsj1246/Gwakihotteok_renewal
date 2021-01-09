@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Gwakihotteok_renewal/static/css/main.607dc9b4.chunk.css",
-    "main.js": "/Gwakihotteok_renewal/static/js/main.df780ddf.chunk.js",
-    "main.js.map": "/Gwakihotteok_renewal/static/js/main.df780ddf.chunk.js.map",
+    "main.css": "/Gwakihotteok_renewal/static/css/main.64808c81.chunk.css",
+    "main.js": "/Gwakihotteok_renewal/static/js/main.0b16e3a1.chunk.js",
+    "main.js.map": "/Gwakihotteok_renewal/static/js/main.0b16e3a1.chunk.js.map",
     "runtime-main.js": "/Gwakihotteok_renewal/static/js/runtime-main.ee39fb92.js",
     "runtime-main.js.map": "/Gwakihotteok_renewal/static/js/runtime-main.ee39fb92.js.map",
-    "static/js/2.6d7b544c.chunk.js": "/Gwakihotteok_renewal/static/js/2.6d7b544c.chunk.js",
-    "static/js/2.6d7b544c.chunk.js.map": "/Gwakihotteok_renewal/static/js/2.6d7b544c.chunk.js.map",
+    "static/js/2.070cbcee.chunk.js": "/Gwakihotteok_renewal/static/js/2.070cbcee.chunk.js",
+    "static/js/2.070cbcee.chunk.js.map": "/Gwakihotteok_renewal/static/js/2.070cbcee.chunk.js.map",
     "index.html": "/Gwakihotteok_renewal/index.html",
-    "static/css/main.607dc9b4.chunk.css.map": "/Gwakihotteok_renewal/static/css/main.607dc9b4.chunk.css.map",
-    "static/js/2.6d7b544c.chunk.js.LICENSE.txt": "/Gwakihotteok_renewal/static/js/2.6d7b544c.chunk.js.LICENSE.txt"
+    "static/css/main.64808c81.chunk.css.map": "/Gwakihotteok_renewal/static/css/main.64808c81.chunk.css.map",
+    "static/js/2.070cbcee.chunk.js.LICENSE.txt": "/Gwakihotteok_renewal/static/js/2.070cbcee.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ee39fb92.js",
-    "static/js/2.6d7b544c.chunk.js",
-    "static/css/main.607dc9b4.chunk.css",
-    "static/js/main.df780ddf.chunk.js"
+    "static/js/2.070cbcee.chunk.js",
+    "static/css/main.64808c81.chunk.css",
+    "static/js/main.0b16e3a1.chunk.js"
   ]
 }
