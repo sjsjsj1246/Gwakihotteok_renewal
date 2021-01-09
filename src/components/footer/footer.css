@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*ul*/
+.lnb > ul {
+  text-align: center;
+}
+.lnb > ul li {
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+}
+.lnb > ul li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 14px;
+  background: #b2b2b2;
+}
+.lnb > ul li:first-child:after {
+  display: none;
+}
+.lnb > ul li a {
+  font-size: 14px;
+  color: #333;
+}
+.lnb > ul li a:hover {
+  text-decoration: underline;
+}
+
+/*info*/
+.info {
+  text-align: center;
+}
+.info {
+  display: block;
+  padding: 20px 0;
+  font-size: 12.5px;
+  color: #666;
+}
+.info .copy-right {
+  padding: 10px 0 0;
+}
