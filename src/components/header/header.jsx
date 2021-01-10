@@ -1,72 +1,72 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../service/header';
-import './header.css';
+import styles from './header.module.css';
 
 const Header = (props) => {
-  const [isHover, setIsHover] = useState([0]);
-  const handleHover = () => {
-    setIsHover(isHover ? 0 : 1);
-  };
   return (
-    <div className={`header ${isHover ? 'hover' : ''}`}>
-      <div className="logo">
-        <a href="/" target="_parent">
-          <img src="images/Image_logo/과기호떡로고.png" />{' '}
-        </a>
+    <header>
+      <Link to="/" className={styles.logo}>
+        <img src="images/Image_logo/과기호떡로고.png" alt="로고" />
+      </Link>
+      <div className={styles.navbar}>
+        <div className={styles.dropdown}>
+          <Link
+            to="/article?id=menu&menuId=mainMenu"
+            className={styles.dropbtn}
+          >
+            메뉴
+          </Link>
+          <div className={styles.dropdownList}>
+            <Link
+              to="/article?id=menu&menuId=mainMenu"
+              className={styles.dropdownItem}
+            >
+              주 메뉴
+            </Link>
+            <Link
+              to="/article?id=menu&menuId=sideMenu"
+              className={styles.dropdownItem}
+            >
+              사이드 메뉴
+            </Link>
+            <Link
+              to="/article?id=menu&menuId=setMenu"
+              className={styles.dropdownItem}
+            >
+              특가 세트
+            </Link>
+          </div>
+        </div>
+
+        <div className={styles.dropdown}>
+          <Link to="/article?id=event" className={styles.dropbtn}>
+            이벤트
+          </Link>
+          <div className={styles.dropdownList}>
+            <Link to="/" className={styles.dropdownItem}>
+              미래관 이벤트
+            </Link>
+            <Link to="/" className={styles.dropdownItem}>
+              밤샘 이벤트
+            </Link>
+            <Link to="/" className={styles.dropdownItem}>
+              행운의 100! 이벤트
+            </Link>
+          </div>
+        </div>
+        <div className={styles.dropdown}>
+          <Link to="/article?id=onlineOrder" className={styles.dropbtn}>
+            온라인 주문
+          </Link>
+        </div>
+        <div className={styles.dropdown}>
+          <Link to="/article?id=findStore" className={styles.dropbtn}>
+            매장찾기
+          </Link>
+        </div>
       </div>
-      <nav>
-        <ul onMouseOver={handleHover} onMouseOut={handleHover}>
-          <li>
-            <Link to="/menu">메뉴</Link>
-            <ul>
-              <li>
-                <Link to="/">주메뉴</Link>
-              </li>
-              <li>
-                <Link to="/">사이드메뉴</Link>
-              </li>
-              <li>
-                <Link to="/">특가 세트</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link to="online_order">온라인 주문</Link>
-            <ul>
-              <li>
-                <img
-                  src="../image/UI/Online_order.png"
-                  alt="온라인주문이미지"
-                />{' '}
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link to="event">이벤트</Link>
-            <ul>
-              <li>
-                <Link to="/">미래관 이벤트</Link>
-              </li>
-              <li>
-                <Link to="/">밤샘 이벤트</Link>
-              </li>
-              <li>
-                <Link to="/">행운의 100! 이벤트</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link to="find_store">매장찾기</Link>
-            <ul>
-              <li>
-                <img src="../image/UI/Find_store.png" alt="매장찾기 이미지" />
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    </header>
   );
 };
 

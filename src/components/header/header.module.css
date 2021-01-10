@@ -1,20 +1,20 @@
 .logo {
   display: block;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   background-color: white;
   text-align: center;
 }
 
 .logo img {
-  width: 150px;
-  height: 100px;
+  width: 9.375rem;
+  height: auto;
 }
 
 .navbar {
   height: 2em;
   overflow: hidden;
-  background: linear-gradient(#0d3979 50%, #ff0000 50%);
+  background: linear-gradient(to right, #0d3979 50%, #ff0000 50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +23,7 @@
 .dropdown {
   width: 10rem;
   height: 100%;
+
   overflow: hidden;
   text-align: center;
 }
@@ -34,7 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.875rem;
   border: none;
   outline: none;
   color: white;
@@ -44,21 +45,18 @@
 .dropbtn::after {
   content: '';
   display: block;
-  left: 50%;
-  bottom: 5px;
   width: 0%;
   height: 2px;
   background: #fff;
 }
 
 .dropdown:hover .dropbtn::after {
-  left: 0;
   width: 100%;
   transition: all 0.5s;
 }
 
 .dropdownList {
-  font-size: 1rem;
+  font-size: rem;
   display: none;
   position: absolute;
   background-color: #f9f9f9;

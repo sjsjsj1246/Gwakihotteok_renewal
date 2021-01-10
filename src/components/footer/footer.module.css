@@ -1,0 +1,38 @@
+.footer {
+  margin-top: 1rem;
+}
+
+.lnb {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  padding: 0 0.5em;
+  text-decoration: none;
+  color: #333;
+  border-right: 1px solid #b2b2b2;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:last-child {
+  border-right: 0px;
+}
+
+.info {
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 0.78rem;
+  color: #666;
+}
+
+.copyRight {
+  padding: 0.625rem 0 0;
+}
