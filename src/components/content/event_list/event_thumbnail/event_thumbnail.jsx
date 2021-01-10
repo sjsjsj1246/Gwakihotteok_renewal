@@ -1,16 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import styles from './event_thumbnail.module.css';
 
 const EventThumbnail = ({ event }) => {
   const { id, title, date, explain, imageURL } = event;
   return (
-    <div>
-      <img src={imageURL} alt="이벤트" />
-      <dl>
-        <dt>{title}</dt>
-        <img src="images/ETC/img_icon_off_line.gif" alt="오프라인" />
-        <dd>{date}</dd>
-      </dl>
-    </div>
+    <Link className={styles.thumbnail} to={`/article?id=event&eventId=${id}`}>
+      <img className={styles.thumbnailImg} src={imageURL} alt="이벤트" />
+      <div className={styles.explain}>
+        <div className={styles.title}>
+          {title}
+          <img
+            src="https://i.postimg.cc/pXJ1j1KG/img-icon-off-line.gif"
+            alt="오프라인"
+          />
+        </div>
+        <div className={styles.date}>{date}</div>
+      </div>
+    </Link>
   );
 };
 

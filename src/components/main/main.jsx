@@ -12,19 +12,25 @@ const Main = (props) => {
         <div className="img_slide">
           <ul>
             <li>
-              <img src="images/Poster/Mirae_home.png" alt="미래관 이벤트" />
-            </li>
-            <li>
-              <img src="images/Poster/Night_home.png" alt="밤샘 이벤트" />
+              <img
+                src="https://i.postimg.cc/Kzj9hZWC/Mirae-home.png"
+                alt="미래관 이벤트"
+              />
             </li>
             <li>
               <img
-                src="images/Poster/Lucky100_main.png"
+                src="https://i.postimg.cc/9z519yfj/Night-home.png"
+                alt="밤샘 이벤트"
+              />
+            </li>
+            <li>
+              <img
+                src="https://i.postimg.cc/8Cm8zPt5/Lucky100-main.png"
                 alt="행운의 100! 이벤트"
               />
             </li>
           </ul>
-          <img src="images/Poster/blank_image.png" />
+          <img src="https://i.postimg.cc/rmgLQFrb/blank-image.png" />
         </div>
       </div>
     </div>

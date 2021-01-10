@@ -1,0 +1,17 @@
+.container {
+  background-color: #f7f3f3;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0.7rem 0 0.3rem 20%;
+  color: #333333;
+}
+
+.explain {
+  margin: 0.3rem 0 0.3rem 20%;
+}
+
+.bottomHr {
+  margin-top: 2rem;
+}

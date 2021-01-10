@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <header>
       <Link to="/" className={styles.logo}>
-        <img src="images/Image_logo/과기호떡로고.png" alt="로고" />
+        <img src="https://i.postimg.cc/vZj7xW22/image.png" alt="로고" />
       </Link>
       <div className={styles.navbar}>
         <div className={styles.dropdown}>
@@ -40,17 +40,26 @@ const Header = (props) => {
         </div>
 
         <div className={styles.dropdown}>
-          <Link to="/article?id=event" className={styles.dropbtn}>
+          <Link to="/article?id=event&eventId=main" className={styles.dropbtn}>
             이벤트
           </Link>
           <div className={styles.dropdownList}>
-            <Link to="/" className={styles.dropdownItem}>
+            <Link
+              to="/article?id=event&eventId=mirae"
+              className={styles.dropdownItem}
+            >
               미래관 이벤트
             </Link>
-            <Link to="/" className={styles.dropdownItem}>
+            <Link
+              to="/article?id=event&eventId=night"
+              className={styles.dropdownItem}
+            >
               밤샘 이벤트
             </Link>
-            <Link to="/" className={styles.dropdownItem}>
+            <Link
+              to="/article?id=event&eventId=lucky"
+              className={styles.dropdownItem}
+            >
               행운의 100! 이벤트
             </Link>
           </div>

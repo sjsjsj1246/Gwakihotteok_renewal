@@ -17,14 +17,14 @@ const Menu = ({ menuId }) => {
           honey: {
             id: 'honey',
             title: '기본 메뉴',
-            imgURL: 'images/Menu/Main/Honey.png',
+            imgURL: 'https://i.postimg.cc/kMfbtQBN/Honey.png',
             title: '꿀 호떡',
             price: 1500,
             popular: false,
           },
           appleJam: {
-            id: 'honey',
-            imgURL: 'images/Menu/Main/AppleJam.png',
+            id: 'appleJam',
+            imgURL: 'https://i.postimg.cc/LsLPqG1h/AppleJam.png',
             title: '사과 잼 호떡',
             price: 1500,
             popular: false,
@@ -37,42 +37,42 @@ const Menu = ({ menuId }) => {
         item: {
           wellbeing: {
             id: 'wellbeing',
-            imgURL: 'images/Menu/Main/Wellbeing.png',
+            imgURL: 'https://i.postimg.cc/HsN86T0V/Wellbeing.png',
             title: '웰빙 호떡',
             price: 2000,
             popular: true,
           },
           nutella: {
-            id: 'appleJam',
-            imgURL: 'images/Menu/Main/Nutella.png',
+            id: 'nutella',
+            imgURL: 'https://i.postimg.cc/Hns8hxP7/Nutella.png',
             title: '누텔라 호떡',
             price: 2000,
             popular: false,
           },
           caramel: {
             id: 'caramell',
-            imgURL: 'images/Menu/Main/Caramel.png',
+            imgURL: 'https://i.postimg.cc/pTBnC8kH/Caramel.png',
             title: '카라멜 호떡',
             price: 1700,
             popular: false,
           },
           seed: {
             id: 'seed',
-            imgURL: 'images/Menu/Main/Seed.png',
+            imgURL: 'https://i.postimg.cc/SNRzLnMB/Seed.png',
             title: '씨앗 호떡',
             price: 2000,
             popular: true,
           },
           cheese: {
             id: 'cheese',
-            imgURL: 'images/Menu/Main/Cheese.png',
+            imgURL: 'https://i.postimg.cc/B63K2NTp/Cheese.png',
             title: '치즈 호떡',
             price: 2000,
             popular: false,
           },
           tteok: {
             id: 'tteok',
-            imgURL: 'images/Menu/Main/Tteok.png',
+            imgURL: 'https://i.postimg.cc/cC9tySVk/Tteok.png',
             title: '떡 호떡',
             price: 2500,
             popular: false,
@@ -89,36 +89,36 @@ const Menu = ({ menuId }) => {
         item: {
           americano: {
             id: 'americano',
-            imgURL: 'images/Menu/Drink/Americano.png',
+            imgURL: 'https://i.postimg.cc/XJK9Ptjt/Americano.png',
             title: '아메리카노',
             price: 1500,
             popular: false,
           },
           cafeLatte: {
             id: 'cafeLatte',
-            imgURL: 'images/Menu/Drink/Cafelatte.png',
-            title: '아메리카노',
+            imgURL: 'https://i.postimg.cc/0jcDkmJf/Cafelatte.png',
+            title: '카페라떼',
             price: 1500,
             popular: false,
           },
           capuccino: {
             id: 'capuccino',
-            imgURL: 'images/Menu/Drink/Capuccino.png',
-            title: '아메리카노',
+            imgURL: 'https://i.postimg.cc/593wSckC/Capuccino.png',
+            title: '카푸치노',
             price: 1500,
             popular: false,
           },
           milk: {
             id: 'milk',
-            imgURL: 'images/Menu/Drink/Milk.png',
-            title: '아메리카노',
+            imgURL: 'https://i.postimg.cc/9Q4Z2DXd/Milk.png',
+            title: '우유',
             price: 1500,
             popular: false,
           },
           orangeJuice: {
             id: 'orangeJuice',
-            imgURL: 'images/Menu/Drink/Orangejuice.png',
-            title: '아메리카노',
+            imgURL: 'https://i.postimg.cc/Vk3Mkz53/Orangejuice.png',
+            title: '오렌지주스',
             price: 1500,
             popular: false,
           },
@@ -130,14 +130,14 @@ const Menu = ({ menuId }) => {
         item: {
           ggochi: {
             id: 'ggochi',
-            imgURL: 'images/Menu/Side/Ggochi.png',
+            imgURL: 'https://i.postimg.cc/T3WLSBQQ/Ggochi.png',
             title: '호떡꼬치',
             price: 2000,
             popular: true,
           },
           miniBall: {
             id: 'miniBall',
-            imgURL: 'images/Menu/Side/Miniball.png',
+            imgURL: 'https://i.postimg.cc/pdbhtk6v/Miniball.png',
             title: '미니호떡치즈볼',
             price: 1500,
             popular: false,
@@ -154,35 +154,35 @@ const Menu = ({ menuId }) => {
         item: {
           goodMorning: {
             id: 'goodMorning',
-            imgURL: 'images/Menu/Set/Goodmorning.png',
+            imgURL: 'https://i.postimg.cc/RhFqTYN7/Goodmorning.png',
             title: '굿모닝 세트',
             price: 2300,
             popular: false,
           },
           bamsem: {
             id: 'bamsem',
-            imgURL: 'images/Menu/Set/Bamsem.png',
+            imgURL: 'https://i.postimg.cc/zfCLDWsg/Bamsem.png',
             title: '밤샘 세트',
             price: 2700,
             popular: false,
           },
           elvis: {
             id: 'elvis',
-            imgURL: 'images/Menu/Set/Elvis.png',
+            imgURL: 'https://i.postimg.cc/TwQpgxY2/Elvis.png',
             title: '엘비스 세트',
             price: 3600,
             popular: false,
           },
           presley: {
             id: 'presley',
-            imgURL: 'images/Menu/Set/Presley.png',
+            imgURL: 'https://i.postimg.cc/7hWhtN2p/Presley.png',
             title: '프레슬리 세트',
             price: 4000,
             popular: false,
           },
           jaesoo: {
             id: 'jaesoo',
-            imgURL: 'images/Menu/Set/Jaesoo.png',
+            imgURL: 'https://i.postimg.cc/qBbN7p5j/Jaesoo.png',
             title: '재수 좋은 날 세트',
             price: 3500,
             popular: true,
@@ -197,7 +197,7 @@ const Menu = ({ menuId }) => {
       return (
         <div className={styles.container}>
           <div className={styles.title}>
-            <img src="images/Image_logo/Mini_icon.png" alt="logo" />
+            <img src="https://i.postimg.cc/c1Mckt66/Mini-icon.png" alt="logo" />
             {menu.title}
           </div>
           <div className={styles.menu}>
@@ -211,14 +211,14 @@ const Menu = ({ menuId }) => {
                       {item.popular && (
                         <img
                           className={styles.hot}
-                          src="images/Image_logo/HOT.png"
+                          src="https://i.postimg.cc/fTzfGW0C/HOT.png"
                           alt="HOT"
                         />
                       )}
                       {item.title}
                     </div>
                     <div>
-                      <img src="images/Image_logo/Money.png" />
+                      <img src="https://i.postimg.cc/5NsSbcBV/Money.png" />
                       {item.price}
                     </div>
                   </div>
@@ -230,21 +230,6 @@ const Menu = ({ menuId }) => {
       );
     }
   });
-  // return menuData[menuId].map((menu) => {
-  //   menu.map((detailMenu) => {
-  //     <h1>{detailMenu.title}</h1>;
-  //     detailMenu.map((item) => {
-  //       <div className={styles.hotteok}>
-  //         <img src={item.imgURL} alt={item.id} />
-  //         <div>
-  //           {item.popular && <img src="images/Image_logo/HOT.png" />}
-  //           <p>{item.title}</p>
-  //           <p>{item.price.toLocaleString() + '원'}</p>
-  //         </div>
-  //       </div>;
-  //     });
-  //   });
-  // });
 };
 
 export default Menu;
