@@ -2,3 +2,19 @@
   box-sizing: border-box;
   margin: 0px;
 }
+
+body {
+  background-color: #f7f3f3;
+}
+
+@media screen and (max-width: 840px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  html {
+    font-size: 8px;
+  }
+}

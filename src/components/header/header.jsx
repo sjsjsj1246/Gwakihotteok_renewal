@@ -6,9 +6,11 @@ import styles from './header.module.css';
 const Header = (props) => {
   return (
     <header>
-      <Link to="/" className={styles.logo}>
-        <img src="https://i.postimg.cc/vZj7xW22/image.png" alt="로고" />
-      </Link>
+      <div className={styles.logo}>
+        <Link to="/">
+          <img src="https://i.postimg.cc/vZj7xW22/image.png" alt="로고" />
+        </Link>
+      </div>
       <div className={styles.navbar}>
         <div className={styles.dropdown}>
           <Link

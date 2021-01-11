@@ -55,7 +55,7 @@ const Article = ({ location }) => {
       {frame[`${query.id}`].explain && (
         <p className={styles.explain}>{frame[`${query.id}`].explain}</p>
       )}
-      <hr />
+      <hr className={styles.topHr} />
       {(() => {
         switch (frame[`${query.id}`].id) {
           case 'menu':
