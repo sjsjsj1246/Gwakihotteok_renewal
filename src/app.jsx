@@ -4,18 +4,23 @@ import Header from './components/header/header';
 import styles from './app.module.css';
 import Main from './components/main/main';
 import Content from './components/content/content';
-import { useState } from 'react';
+import Aside from './components/aside/aside';
 
 function App() {
-  const [thisPage, setThispage] = useState('');
   return (
     <div className={styles.app}>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <Switch>
-          <Route exact path="/" component={Main} />
-          <Route path="/article/:id" component={Content} />
-          <Route path="/article" component={Content} />
+          <Route exact path="/">
+            <Main />
+          </Route>
+          <Route path="/article">
+            <section className={styles.section}>
+              <Content />
+              {/* <Aside /> */}
+            </section>
+          </Route>
         </Switch>
         <Footer />
       </BrowserRouter>

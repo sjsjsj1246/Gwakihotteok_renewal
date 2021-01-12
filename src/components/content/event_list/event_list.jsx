@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import EventThumbnail from './event_thumbnail/event_thumbnail';
 import styles from './event_list.module.css';
 import EventDetail from './event_detail/event_detail';
 
 const EventList = ({ eventId }) => {
-  const [events, setEvents] = useState([
+  const events = [
     {
       id: 'mirae',
       title: '미래관 커피증정 이벤트',
@@ -30,7 +30,7 @@ const EventList = ({ eventId }) => {
       imageURL: 'https://i.postimg.cc/K8LSC5Tt/Lucky100.png',
       thumbnailURL: 'https://i.postimg.cc/8Cm8zPt5/Lucky100-main.png',
     },
-  ]);
+  ];
 
   return (
     <div className={styles.container}>
@@ -38,7 +38,7 @@ const EventList = ({ eventId }) => {
         <div className={styles.eventList}>
           <h1>전체 이벤트</h1>
           {events.map((event) => (
-            <EventThumbnail event={event} />
+            <EventThumbnail key={event.id} event={event} />
           ))}
         </div>
       ) : (
@@ -48,6 +48,7 @@ const EventList = ({ eventId }) => {
               if (events[i].id === eventId) {
                 return (
                   <EventDetail
+                    key={events[i].id}
                     event={events[i]}
                     before={events[i - 1]}
                     next={events[i + 1]}

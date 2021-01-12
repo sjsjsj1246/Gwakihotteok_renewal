@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './menu.module.css';
 
 function numberWithCommas(x) {
@@ -6,7 +6,7 @@ function numberWithCommas(x) {
 }
 
 const Menu = ({ menuId }) => {
-  const [menuData, setMenuData] = useState({
+  const menuData = {
     mainMenu: {
       id: 'mainMenu',
       title: '주 메뉴',
@@ -190,12 +190,12 @@ const Menu = ({ menuId }) => {
         },
       },
     },
-  });
+  };
   return Object.keys(menuData[menuId]).map((menuKey) => {
     if (menuKey !== 'id' && menuKey !== 'title') {
       const menu = menuData[menuId][menuKey];
       return (
-        <div className={styles.container}>
+        <div key={menu.id} className={styles.container}>
           <div className={styles.title}>
             <img src="https://i.postimg.cc/c1Mckt66/Mini-icon.png" alt="logo" />
             {menu.title}
@@ -204,7 +204,7 @@ const Menu = ({ menuId }) => {
             {Object.keys(menu.item).map((itemKey) => {
               const item = menu.item[itemKey];
               return (
-                <div className={styles.item}>
+                <div key={item.id} className={styles.item}>
                   <img src={item.imgURL} alt={item.id} />
                   <div className={styles.explain}>
                     <div>
@@ -212,13 +212,16 @@ const Menu = ({ menuId }) => {
                         <img
                           className={styles.hot}
                           src="https://i.postimg.cc/fTzfGW0C/HOT.png"
-                          alt="HOT"
+                          alt="Hot"
                         />
                       )}
                       {item.title}
                     </div>
                     <div>
-                      <img src="https://i.postimg.cc/5NsSbcBV/Money.png" />
+                      <img
+                        src="https://i.postimg.cc/5NsSbcBV/Money.png"
+                        alt="Won"
+                      />
                       {item.price}
                     </div>
                   </div>

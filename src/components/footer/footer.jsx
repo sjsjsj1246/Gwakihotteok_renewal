@@ -4,15 +4,15 @@ import styles from './footer.module.css';
 
 const Footer = (props) => {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.lnb}>
-        <Link className={styles.link} to="/">
+        <Link className={styles.link} to="/article?id=intro">
           회사소개
         </Link>
-        <Link className={styles.link} to="/">
+        <Link className={styles.link} to="//article?id=membership">
           제휴카드
         </Link>
-        <Link className={styles.link} to="/">
+        <Link className={styles.link} to="//article?id=terms">
           이용약관
         </Link>
       </div>
@@ -27,7 +27,7 @@ const Footer = (props) => {
           COPYRIGHT© 2019 과기호떡 ALL RIGHT RESERVED
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

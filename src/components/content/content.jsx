@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import queryString from 'query-string';
 import Menu from './menu/menu';
 import EventList from './event_list/event_list';
 import OnlineOrder from './online_order/online_order';
 import FindStore from './find_store/find_store';
 import styles from './content.module.css';
+import { useLocation } from 'react-router-dom';
 
-const Article = ({ location }) => {
-  const [frame, setFrame] = useState({
+const Content = () => {
+  const location = useLocation();
+  const { id, eventId, menuId } = queryString.parse(location.search);
+  const frame = {
     menu: {
       id: 'menu',
       imgURL: 'https://i.postimg.cc/NMjnG8KJ/Menu-Introduce-2.png',
@@ -32,36 +35,23 @@ const Article = ({ location }) => {
       title: '매장 찾기',
       explain: '',
     },
-  });
-  const [query, setQuery] = useState({
-    id: 'menu',
-    menuId: 'mainMenu',
-    eventId: 'mirae',
-  });
-
-  useEffect(() => {
-    setQuery(queryString.parse(location.search));
-    console.log(query);
-  }, [location]);
+  };
+  console.log(id, menuId, eventId);
 
   return (
-    <section className={styles.container}>
-      <img
-        className={styles.titleImg}
-        src={frame[`${query.id}`].imgURL}
-        alt="타이틀"
-      />
-      <h1 className={styles.title}>{frame[`${query.id}`].title}</h1>
-      {frame[`${query.id}`].explain && (
-        <p className={styles.explain}>{frame[`${query.id}`].explain}</p>
+    <div className={styles.content}>
+      <img className={styles.titleImg} src={frame[id].imgURL} alt="타이틀" />
+      <h1 className={styles.title}>{frame[id].title}</h1>
+      {frame[id].explain && (
+        <p className={styles.explain}>{frame[id].explain}</p>
       )}
       <hr className={styles.topHr} />
       {(() => {
-        switch (frame[`${query.id}`].id) {
+        switch (frame[id].id) {
           case 'menu':
-            return <Menu menuId={query.menuId} />;
+            return <Menu menuId={menuId} />;
           case 'event':
-            return <EventList eventId={query.eventId} />;
+            return <EventList eventId={eventId} />;
           case 'onlineOrder':
             return <OnlineOrder />;
           case 'findStore':
@@ -71,8 +61,8 @@ const Article = ({ location }) => {
         }
       })()}
       <hr className={styles.bottomHr} />
-    </section>
+    </div>
   );
 };
 
-export default Article;
+export default Content;

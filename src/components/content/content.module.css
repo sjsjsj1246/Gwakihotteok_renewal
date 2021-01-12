@@ -1,4 +1,4 @@
-.container {
+.content {
 }
 
 .title {
@@ -17,4 +17,9 @@
 
 .bottomHr {
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 840px) {
+  .content {
+  }
 }
