@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Gwakihotteok_renewal/static/css/main.d2aefde2.chunk.css",
-    "main.js": "/Gwakihotteok_renewal/static/js/main.8a6c3429.chunk.js",
-    "main.js.map": "/Gwakihotteok_renewal/static/js/main.8a6c3429.chunk.js.map",
+    "main.js": "/Gwakihotteok_renewal/static/js/main.5b24cdba.chunk.js",
+    "main.js.map": "/Gwakihotteok_renewal/static/js/main.5b24cdba.chunk.js.map",
     "runtime-main.js": "/Gwakihotteok_renewal/static/js/runtime-main.ee39fb92.js",
     "runtime-main.js.map": "/Gwakihotteok_renewal/static/js/runtime-main.ee39fb92.js.map",
     "static/js/2.4068ccea.chunk.js": "/Gwakihotteok_renewal/static/js/2.4068ccea.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ee39fb92.js",
     "static/js/2.4068ccea.chunk.js",
     "static/css/main.d2aefde2.chunk.css",
-    "static/js/main.8a6c3429.chunk.js"
+    "static/js/main.5b24cdba.chunk.js"
   ]
 }
