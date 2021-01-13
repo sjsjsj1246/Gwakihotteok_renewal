@@ -3,6 +3,10 @@
   justify-content: space-around;
 }
 
+.titleImg {
+  width: 100%;
+}
+
 .title {
   font-size: 2rem;
   margin: 0.7rem 0 0.3rem 20%;

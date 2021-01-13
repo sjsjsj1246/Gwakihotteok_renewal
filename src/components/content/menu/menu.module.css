@@ -37,6 +37,10 @@
   margin: 0 5%;
 }
 
+.itemImg {
+  width: 100%;
+}
+
 .explain {
   width: 100%;
   font-size: 0.875rem;

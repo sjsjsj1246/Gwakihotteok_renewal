@@ -210,7 +210,11 @@ const Menu = ({ menuId }) => {
                   const item = menu.item[itemKey];
                   return (
                     <div key={item.id} className={styles.item}>
-                      <img src={item.imgURL} alt={item.id} />
+                      <img
+                        className={styles.itemImg}
+                        src={item.imgURL}
+                        alt={item.id}
+                      />
                       <div className={styles.explain}>
                         <div>
                           {item.popular && (
