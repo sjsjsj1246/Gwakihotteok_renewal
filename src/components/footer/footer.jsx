@@ -6,13 +6,13 @@ const Footer = (props) => {
   return (
     <footer className={styles.footer}>
       <div className={styles.lnb}>
-        <Link className={styles.link} to="/article?id=intro">
+        <Link className={styles.link} to="/content?id=intro">
           회사소개
         </Link>
-        <Link className={styles.link} to="//article?id=membership">
+        <Link className={styles.link} to="/content?id=membership">
           제휴카드
         </Link>
-        <Link className={styles.link} to="//article?id=terms">
+        <Link className={styles.link} to="/content?id=terms">
           이용약관
         </Link>
       </div>

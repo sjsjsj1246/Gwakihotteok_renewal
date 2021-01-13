@@ -6,6 +6,10 @@ import OnlineOrder from './online_order/online_order';
 import FindStore from './find_store/find_store';
 import styles from './content.module.css';
 import { useLocation } from 'react-router-dom';
+import Intro from './intro/intro';
+import Terms from './terms/terms';
+import Membership from './membership/membership';
+import Aside from '../aside/aside';
 
 const Content = () => {
   const location = useLocation();
@@ -35,33 +39,62 @@ const Content = () => {
       title: '매장 찾기',
       explain: '',
     },
+    intro: {
+      id: 'intro',
+      imgURL: '',
+      title: '회사소개',
+      explain: '과기호떡의 회사 소개를 확인해보세요',
+    },
+    membership: {
+      id: 'findStore',
+      imgURL: '',
+      title: '제휴카드',
+      explain: '과기호떡의 제휴카드를 확인해보세요',
+    },
+    terms: {
+      id: 'findStore',
+      imgURL: '',
+      title: '이용약관',
+      explain: '과기호떠의 이용약관을 확인해보세요',
+    },
   };
   console.log(id, menuId, eventId);
 
   return (
-    <div className={styles.content}>
-      <img className={styles.titleImg} src={frame[id].imgURL} alt="타이틀" />
+    <section className={styles.section}>
+      {frame[id].imgURL !== '' && (
+        <img className={styles.titleImg} src={frame[id].imgURL} alt="타이틀" />
+      )}
       <h1 className={styles.title}>{frame[id].title}</h1>
       {frame[id].explain && (
         <p className={styles.explain}>{frame[id].explain}</p>
       )}
       <hr className={styles.topHr} />
-      {(() => {
-        switch (frame[id].id) {
-          case 'menu':
-            return <Menu menuId={menuId} />;
-          case 'event':
-            return <EventList eventId={eventId} />;
-          case 'onlineOrder':
-            return <OnlineOrder />;
-          case 'findStore':
-            return <FindStore />;
-          default:
-            return Error('잘못된 접근입니다.');
-        }
-      })()}
+      <div className={styles.content}>
+        {(() => {
+          switch (frame[id].id) {
+            case 'menu':
+              return <Menu menuId={menuId} />;
+            case 'event':
+              return <EventList eventId={eventId} />;
+            case 'onlineOrder':
+              return <OnlineOrder />;
+            case 'findStore':
+              return <FindStore />;
+            case 'intro':
+              return <Intro />;
+            case 'membership':
+              return <Membership />;
+            case 'terms':
+              return <Terms />;
+            default:
+              return Error('잘못된 접근입니다.');
+          }
+        })()}
+        <Aside />
+      </div>
       <hr className={styles.bottomHr} />
-    </div>
+    </section>
   );
 };
 

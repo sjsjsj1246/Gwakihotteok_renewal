@@ -191,48 +191,55 @@ const Menu = ({ menuId }) => {
       },
     },
   };
-  return Object.keys(menuData[menuId]).map((menuKey) => {
-    if (menuKey !== 'id' && menuKey !== 'title') {
-      const menu = menuData[menuId][menuKey];
-      return (
-        <div key={menu.id} className={styles.container}>
-          <div className={styles.title}>
-            <img src="https://i.postimg.cc/c1Mckt66/Mini-icon.png" alt="logo" />
-            {menu.title}
-          </div>
-          <div className={styles.menu}>
-            {Object.keys(menu.item).map((itemKey) => {
-              const item = menu.item[itemKey];
-              return (
-                <div key={item.id} className={styles.item}>
-                  <img src={item.imgURL} alt={item.id} />
-                  <div className={styles.explain}>
-                    <div>
-                      {item.popular && (
-                        <img
-                          className={styles.hot}
-                          src="https://i.postimg.cc/fTzfGW0C/HOT.png"
-                          alt="Hot"
-                        />
-                      )}
-                      {item.title}
+  return (
+    <div className={styles.container}>
+      {Object.keys(menuData[menuId]).map((menuKey) => {
+        if (menuKey !== 'id' && menuKey !== 'title') {
+          const menu = menuData[menuId][menuKey];
+          return (
+            <div key={menu.id} className={styles.menulist}>
+              <div className={styles.title}>
+                <img
+                  src="https://i.postimg.cc/c1Mckt66/Mini-icon.png"
+                  alt="logo"
+                />
+                {menu.title}
+              </div>
+              <div className={styles.menu}>
+                {Object.keys(menu.item).map((itemKey) => {
+                  const item = menu.item[itemKey];
+                  return (
+                    <div key={item.id} className={styles.item}>
+                      <img src={item.imgURL} alt={item.id} />
+                      <div className={styles.explain}>
+                        <div>
+                          {item.popular && (
+                            <img
+                              className={styles.hot}
+                              src="https://i.postimg.cc/fTzfGW0C/HOT.png"
+                              alt="Hot"
+                            />
+                          )}
+                          {item.title}
+                        </div>
+                        <div>
+                          <img
+                            src="https://i.postimg.cc/5NsSbcBV/Money.png"
+                            alt="Won"
+                          />
+                          {item.price}
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                      <img
-                        src="https://i.postimg.cc/5NsSbcBV/Money.png"
-                        alt="Won"
-                      />
-                      {item.price}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      );
-    }
-  });
+                  );
+                })}
+              </div>
+            </div>
+          );
+        }
+      })}
+    </div>
+  );
 };
 
 export default Menu;

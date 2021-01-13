@@ -19,7 +19,7 @@ const EventDetail = ({ event, before, next }) => {
           <div className={styles.move}>
             <Link
               className={styles.moveName}
-              to={`/article?id=event&eventId=${before.id}`}
+              to={`/content?id=event&eventId=${before.id}`}
             >
               <p className={styles.moveBtn}>이전 글</p>
               <p className={styles.moveTitle}>{before.title}</p>
@@ -31,7 +31,7 @@ const EventDetail = ({ event, before, next }) => {
           <div className={styles.move}>
             <Link
               className={styles.moveName}
-              to={`/article?id=event&eventId=${next.id}`}
+              to={`/content?id=event&eventId=${next.id}`}
             >
               <p className={styles.moveBtn}>다음 글</p>
               <p className={styles.moveTitle}>{next.title}</p>

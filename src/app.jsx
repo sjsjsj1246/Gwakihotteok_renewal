@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import styles from './app.module.css';
@@ -12,15 +12,8 @@ function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <Switch>
-          <Route exact path="/">
-            <Main />
-          </Route>
-          <Route path="/article">
-            <section className={styles.section}>
-              <Content />
-              {/* <Aside /> */}
-            </section>
-          </Route>
+          <Route exact path="/" component={Main} />
+          <Route path="/content" component={Content} />
         </Switch>
         <Footer />
       </BrowserRouter>
