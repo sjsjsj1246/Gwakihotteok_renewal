@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../service/header';
 import styles from './header.module.css';
 
 const Header = (props) => {
