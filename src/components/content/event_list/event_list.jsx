@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import EventThumbnail from './event_thumbnail/event_thumbnail';
 import styles from './event_list.module.css';
 import EventDetail from './event_detail/event_detail';
@@ -31,7 +31,9 @@ const EventList = ({ eventId }) => {
       thumbnailURL: 'https://i.postimg.cc/8Cm8zPt5/Lucky100-main.png',
     },
   ];
-
+  useEffect(() => {
+    console.log('hi');
+  });
   return (
     <div className={styles.container}>
       {eventId === 'main' ? (

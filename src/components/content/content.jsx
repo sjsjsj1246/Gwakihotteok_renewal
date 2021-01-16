@@ -11,7 +11,7 @@ import Terms from './terms/terms';
 import Membership from './membership/membership';
 import Aside from '../aside/aside';
 
-const Content = () => {
+const Content = ({ gwakihotteokData }) => {
   const location = useLocation();
   const { id, eventId, menuId } = queryString.parse(location.search);
   const frame = {
@@ -58,7 +58,6 @@ const Content = () => {
       explain: '과기호떠의 이용약관을 확인해보세요',
     },
   };
-  console.log(id, menuId, eventId);
 
   return (
     <section className={styles.section}>
@@ -74,7 +73,9 @@ const Content = () => {
         {(() => {
           switch (frame[id].id) {
             case 'menu':
-              return <Menu menuId={menuId} />;
+              return (
+                <Menu menuId={menuId} gwakihotteokData={gwakihotteokData} />
+              );
             case 'event':
               return <EventList eventId={eventId} />;
             case 'onlineOrder':

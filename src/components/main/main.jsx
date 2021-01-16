@@ -26,7 +26,6 @@ const Main = (props) => {
   const [index, setIndex] = useState(0);
   useInterval(() => {
     setIndex((index + 1) % imgList.length);
-    console.log(index);
   }, 5000);
 
   return (
@@ -34,7 +33,7 @@ const Main = (props) => {
       {imgList.map((item) => (
         <img
           className={`${styles.slideItem} ${
-            index === item.index ? styles.show : ''
+            index === item.index && styles.show
           }`}
           src={item.imgURL}
           alt={item.title}
